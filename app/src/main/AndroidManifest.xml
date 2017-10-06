@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.adityawiguna.pemrogramanphp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name=".Kuis"
+            android:label="Kuis">
+            <intent-filter>
+                <action android:name="com.adityawiguna.pemrogramanphp.Kuis" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+             <meta-data
+             android:name="android.support.PARENT_ACTIVITY"
+             android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Bantuan"
+            android:label="Bantuan">
+
+             <meta-data
+             android:name="android.support.PARENT_ACTIVITY"
+             android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ListMateri"
+            android:label="Materi">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Tentang"
+            android:label="Tentang PHP">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".SintaksDasar"
+            android:label="Sintaks Dasar PHP">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ListMateri" />
+        </activity>
+        <activity
+            android:name=".Variable"
+            android:label="Variable">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ListMateri" />
+        </activity>
+        <activity
+            android:name=".Operator"
+            android:label="Operator">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ListMateri" />
+        </activity>
+        <activity
+            android:name=".Array"
+            android:label="Array">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ListMateri" />
+        </activity>
+        <activity
+            android:name=".Situasi"
+            android:label="Situasi Kontrol">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ListMateri" />
+        </activity>
+        <activity
+            android:name=".Simulasi"
+            android:label="Simulasi">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ListMateri" />
+        </activity>
+        <activity android:name=".Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
